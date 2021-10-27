@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Пракса-AUCTA</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <div className="tabela-div">
+        <table id="tabela">
+            <thead>
+                <th colspan="2">User</th>
+                <th >See more info</th>
+            </thead>
+        </table>
+        <div id="info" style="display: none;">
+            <button class="goBack-button" onclick="goBack()">◄ Go back</button>
+            <button id="createUser-button" onclick="goToForm()">Create user ►</button>
+        </div>
+
+        <div id="formDiv" style="display: none;">
+            <form id="create-user">
+                <labeL for="firstName">Name:</label>
+                <input id="firstName" name="firstName" type="text" placeholder="First Name">
+                <label for="lastName">Last Name:</label>
+                <input id="lastName" name="lastName" type="text" placeholder="Last Name">
+                <label for="email">Email:</label>
+                <input id="email" name="email" type="email" placeholder="email">
+                <button type="submit">CREATE USER</button>
+            </form>
+            <button class="goBack-button" onclick="goBack()">◄ Go Back to First page</button>
+        </div>
+    </div>
+
+</body>
+
+</html>
